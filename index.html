@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Declares the document as html. (html is short for HTML5. Older versions were much more verbose in their naming) -->
+<!-- The page 'wrapper'. This includes the head and body of the page. lang (language) is set to en (english) -->
+<html lang="en">
+  <!-- The header of the page. This isn't seen in the browser except for the title in the browser tab -->
+  <head>
+    <!-- This is the line that imports the styles for the page -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- This is the text that shows in the browser tab -->
+    <title>Web Site</title>
+  </head>
+  <!-- Main body of the page. This is where everything visible on the page goes -->
+  <body>
+    <!-- The main heading for the page. Notice, the javascript changes this text using the id. -->
+    <!-- The styles file also changes the style of this using the h1 tag targeting the 'site-title' id (div#site-tite) -->
+    <h1 id="site-title">Web Site</h1>
+    <!-- This is the main content of the page, styled targeting the 'main-content' class (.main-content). a 'div' is like a container -->
+    <div class="main-content">
+      <!-- paragraph -->
+      <p>Web site description.</p>
+      <!-- Text box that shows on the page. Javascript gets the value of this targeting the 'my-input' id -->
+      <input id="my-input" />
+      <!-- This just adds a breaking space (basically a new line) after an element -->
+      <br />
+      <!-- Disabled text area used to display what is typed in the text box. -->
+      <!-- Styled with css #my-text-area) and updated with javascript (my-text-area) using the 'my-text-area' id -->
+      <textarea id="my-text-area" disabled></textarea>
+      <br />
+      <!-- the onclick button targets the 'updateText' function in the javascript file -->
+      <button id="alert-btn" onclick="updateText()">Trigger Alert</button>
+    </div>
+
+    <!-- This is where the javascript for the page is loaded -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
