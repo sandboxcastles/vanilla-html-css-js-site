@@ -1,25 +1,40 @@
 body {
+  /* Sets the background of the page to lightblue */
   background-color: lightblue;
+  /* Sets the font-size of th page to 16 pixels */
   font-size: 16px;
 }
 
+/* This affects the h1 element on the page that has an id of 'site-title' */
 h1#site-title {
+  /* Centers text within the h1 */
   text-align: center;
+  /* Makes text in the h1 white */
   color: white;
+  /* Makes font-size of the h1 3 rem */
   font-size: 3rem;
+  /* Give the h1 text a gray shadow around it. 3 pixels left and down, and 'hazy' by 10 pixels */
   text-shadow: 3px 3px 10px gray;
 }
 
+/* This affects any element with a class of 'main-content' */
 .main-content {
+  /* Centers any text within 'main-content' */
   text-align: center;
 }
 
+/* This affects any paragraph element on the page */
 p {
+  /* Set paragraph font color to black. */
   color: black;
 }
 
+/* This affects the element with an id of 'my-text-area' */
 #my-text-area {
+  /* Sets the width of the element to 300 pixels */
   width: 300px;
+  /* Sets the height of the element to 150 pixels */
   height: 150px;
+  /* Disables resize of the element. (Usually used on 'textarea' elements) */
   resize: none;
 }
